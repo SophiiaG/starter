@@ -1,0 +1,31 @@
+$boderColor: #6A6A6A;
+$bgColor: #fff;
+$textColor:#333;
+
+@mixin baseInput{
+  font-size: 1.6rem;
+  width: 100%;
+  border: 1px solid $boderColor;
+  border-radius: 2px;
+  outline: none;
+  background: $bgColor;
+  padding: .9rem 1rem;
+  color:$textColor;
+}
+// tout le style relatif aux inputs sera directement centraliser ici.
+
+.formInput-text{
+  @include baseInput;
+  //additional styles
+}
+.formInput-select{
+  @include baseInput;
+  //additional styles
+}
+.formInput-number{
+  @include baseInput;
+  //additional styles
+}
+.formInput-submit{
+  //other styles
+}
